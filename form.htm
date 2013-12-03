@@ -1,0 +1,185 @@
+
+<!-- 
+ *  19 - Nov, 2013
+ *  Project: Alpha Numeric Captcha 
+ *  Author: Nadeem Ur-Rehman
+ *  Framework: Jquery Validator
+ *  Purpose: Client-side form validation of Captcha
+ * -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/BDC_NEW_template.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Step-by-step Business Startup Guide</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="MetaTags1" -->
+<meta name="description" content="Best Jquery Form Validation and Ajax based Captcha!">
+<meta name="keywords" content="Jquery, Captcha, Ajax, PHP, Form Validation, Random numbers, distinguish human from machine input, spam blocker, spambot check, ">
+<META NAME="ROBOTS" CONTENT="index, follow">
+<meta http-equiv="DESCRIPTION" content="Step-by-step Best Jquery Form Validation and Ajax based Captcha!">
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+
+
+<!-- Added by Nadeem 18/Nov/2013 -->
+<link href="lib/css/global.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+<script type="text/javascript" src="lib/js/validate.js"></script>
+<!-- End Validation Code -->
+
+<script type="text/javascript">
+         var RecaptchaOptions = {
+          lang : 'en',
+            theme : 'custom',
+            custom_theme_widget: 'recaptcha_widget'
+         };
+      </script>   
+
+</head>
+
+<body >
+<h1 align="center">Jquery Form Validator with Ajax based Captcha!</h1>
+<FORM METHOD="POST" action="business_steps75.php" name="contact" id="FrontPage_Form1"> 
+
+
+				<div align="center">
+					<table border="0" width="95%">
+								<tr>
+							<td width="34"><b><font size="2">1.</font></b></td>
+							<td width="262" align="left"><b><font face="Verdana" size="2">In what province 
+							are you from? </font></b></td>
+							<td width="29">&nbsp;</td>
+							<td width="314" align="left">
+							&nbsp;<!--webbot bot="Validation" s-display-name="Location of your business" b-value-required="TRUE" b-disallow-first-item="TRUE" -->
+              <select id="CPPublicationProvince" size="1" name="Province_Location">
+                  <option value="" selected="selected"></option>
+                  <option value="Alberta">Alberta</option>
+                  <option value="British Columbia">British Columbia</option>
+                  <option value="Manitoba">Manitoba</option>
+                  <option value="New Brunswick">New Brunswick</option>
+                  <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                  <option value="Northwest Territories">Northwest Territories</option>
+                  <option value="Nova Scotia">Nova Scotia</option>
+                  <option value="Nunavut">Nunavut</option>
+                  <option value="Ontario">Ontario</option>
+                  <option value="Prince Edward Island">Prince Edward Island</option>
+                  <option value="Quebec">Quebec</option>
+                  <option value="Saskatchewan">Saskatchewan</option>
+                  <option value="Yukon">Yukon</option>
+              </select><font size="2" face="Verdana">&nbsp; <font color="#FF0000">*</font></font><input type="hidden" name="survey_name" value="<step_guide>" /><br>
+                <label for="CPPublicationProvince" class="error" generated="true"></label>
+            </td>
+						</tr>
+						<tr>
+							<td width="34">&nbsp;</td>
+							<td width="262" align="left">&nbsp;</td>
+							<td width="29">&nbsp;</td>
+							<td align="left">&nbsp;</td>
+						</tr>
+		
+						<tr>
+							<td width="34"><b><font size="2">2.</font></b></td>
+							<td width="262" align="left"><b><font face="Verdana" size="2">When 
+							are you planning to start your own code?</font></b> </td>
+							<td width="29">&nbsp;</td>
+							<td align="left"><font face="Verdana">
+							&nbsp;<!--webbot bot="Validation" s-display-name="When are you planning to start your business?" b-value-required="TRUE" --><input type="radio" value="Right away" name="When_starting_code" /><font size="2"> 
+							Right away &nbsp;&nbsp;&nbsp;&nbsp; <font color="#FF0000">*</font><br>
+&nbsp;</font><input type="radio" value="Within a week" name="When_starting_code" /><font size="2"> 
+							Within a week&nbsp; &nbsp;&nbsp;
+							<font color="#FF0000"><br>
+&nbsp;</font></font><input type="radio" value="Within one month" name="When_starting_code" /><font size="2"> 
+							Within one month&nbsp; &nbsp;&nbsp;&nbsp; <br>
+&nbsp;</font><input type="radio" value="Just doing my research" name="When_starting_code" /><font size="2"> 
+							Just doing my research&nbsp; </font></font>
+              <br><label for="When_starting_code" class="error" generated="true"></label>
+            </td>
+						</tr>
+											<tr>
+							<td width="34">&nbsp;</td>
+							<td colspan="3" align="left"><hr></td>
+						</tr>
+						<tr>
+            <td width="34" height="25">&nbsp;</td>
+            <td width="262" height="25" align="left"><b><font face="Verdana" size="2">First Name</font></b></td>
+            <td width="29" height="25">&nbsp;</td>
+          					<td align="left"><font face="Verdana" size="2">
+              				<font face="Verdana">
+							<!--webbot bot="Validation" B-Value-Required="TRUE" I-Minimum-Length="2" -->
+              <input type="text" name="FirstName" size="25" /></font>&nbsp;&nbsp;&nbsp;&nbsp; <font color="#FF0000">*</font></font>
+              <br><label for="FirstName" class="error" generated="true"></label>
+            </td>
+						</tr>
+						<tr>
+            <td width="34" height="25">&nbsp;</td>
+            <td width="262" height="25" align="left"><b><font face="Verdana" size="2">Last Name</font></b></td>
+            <td width="29" height="25">&nbsp;</td>
+          					<td align="left"><font face="Verdana" size="2">
+              				<font face="Verdana">
+							<!--webbot bot="Validation" B-Value-Required="TRUE" I-Minimum-Length="2" -->
+              <input type="text" name="LastName" size="25" /></font>&nbsp;&nbsp;&nbsp;&nbsp; <font color="#FF0000">*</font></font>
+              <br><label for="LastName" class="error" generated="true"></label>
+            </td>
+						</tr>
+						<tr>
+            <td width="34" height="25">&nbsp;</td>
+            <td width="262" height="25" align="left"><b><font face="Verdana" size="2">Telephone</font></b></td>
+            <td width="29" height="25">&nbsp;</td>
+          					<td align="left"><font face="Verdana" size="2">
+              				<font face="Verdana">
+              <input type="text" name="Telephone" size="25" /></font>
+               				(optional)</font></td>
+						</tr>
+						<tr>
+            <td width="34" height="25">&nbsp;</td>
+            <td width="262" height="25" align="left"><b><font face="Verdana" size="2">E-mail</font></b></td>
+            <td width="29" height="25">&nbsp;</td>
+          					<td align="left"><font face="Verdana" size="2">
+              				<font face="Verdana">
+              <input type="text" name="Email" size="35" /></font>&nbsp;&nbsp;&nbsp;&nbsp; <font color="#FF0000">*</font></font>
+              <br><label for="Email" class="error" generated="true"></label>
+            </td>
+						</tr>
+						<tr>
+							<td width="34">&nbsp;</td>
+							<td colspan="3"><hr /></td>
+						</tr>
+						<tr>
+							<td width="34">&nbsp;</td>
+							<td width="262"><strong><font size="2" face="Verdana">Please enter the
+							      code you see on the right to identify yourself
+							      as a real person and not a spammer. </font></strong></td>
+							<td width="29">&nbsp;</td>
+							<td>
+							<!-- CAPTCHA CODE -->
+<div style='margin: 10px 0; padding: 0; line-height: 1em;'>
+
+ 
+<div id="wrap" align="center">
+    <img src="lib/get_captcha.php" alt="" id="captcha" />
+    
+    <br clear="all" />
+    <input name="captchacode" type="text" id="captchacode">
+  </div>
+  <img src="lib/refresh-icon.png" width="25" alt="" id="refresh" />
+  
+</div>
+<!-- END CAPTCHA CODE -->
+							
+							</td>
+						</tr>
+				  </table>
+				</div>
+			
+				<p align="center"><br /><font face="Verdana"><input type="submit" value="Submit" name="submit" id="submit" />
+			    <input type="reset" value="Reset" name="B2" />
+				</font></p>
+				</form></p>
+  
+</body>
+</html>
