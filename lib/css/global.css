@@ -1,0 +1,57 @@
+
+
+#FrontPage_Form1  label, #FrontPage_Form1  textarea {
+	display: block;
+	margin-top: 10px;
+	padding: 2px;
+}
+#FrontPage_Form1  label { margin-top: 1px; display: none; }
+textarea { font-size: 80%; font-family: Verdana,Arial,Helvetica,sans-serif; }
+#response, #loading { display: none }
+#loading { text-align: center }
+label.error { font-size: 11px; color: red; float: none; clear: both; font-family: arial; }
+input.error, textarea.error { border: 1px solid red }
+#response h3 { background: none; border: none }
+#FrontPage_Form1 input.captcha, #FrontPage_Form1 input.sum {
+	display: inline;
+	width: 40px;
+	text-align: center;
+}
+#FrontPage_Form1 input.sum { width: 20px }
+span#spambot {
+	font-size: 11px;
+}
+#FrontPage_Form1 input[type="text"], #FrontPage_Form1 textarea {
+    background: -moz-linear-gradient(center top , #FFFFFF, #EEEEEE 1px, #FFFFFF 25px) repeat scroll 0 0 transparent;
+    border: 1px solid #D8D8D8;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    outline: 0 none;
+    padding: 5px;
+    width: 180px;
+}
+
+img#refresh{
+	float:left;
+	margin-top:30px;
+	margin-left:4px;
+	cursor:pointer;
+}
+#wrap{
+	border:solid #CCCCCC 1px;
+	width:203px;
+	float:left;
+	padding:3px;
+	margin-top:3px;
+	margin-left:0px;
+}
+
+
+#FrontPage_Form1 textarea { width: 300px; font: normal 13px/150% Arial, Helvetica, sans-serif;  }
+
+#FrontPage_Form1 input:hover, #FrontPage_Form1 textarea:hover, #FrontPage_Form1 input:focus, #FrontPage_Form1 textarea:focus {
+    border-color: #B0B0B0;
+}
+
+#FrontPage_Form1 input[type="radio"]{
+    border: 1px solid #D8D8D8;
+}
