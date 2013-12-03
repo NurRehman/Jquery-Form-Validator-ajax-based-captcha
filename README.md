@@ -21,7 +21,11 @@ File Structure:
 * lib/js/validate.js (Validation of your form)
 * lib/fonts/ (special fonts to use for captcha)
 * lib/css/global.css (css for your form)
-* 
+
+
+Please keep the file structure as it is but you can change it later once you figured out the paths.
+
+
 
 
 
